@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Lucas Mikolaiewski, desenvolvedor full-stack">
+  <defs>
+    <radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 60) scale(520 360)">
+      <stop offset="0" stop-color="#1f6feb" stop-opacity=".55"/><stop offset="1" stop-color="#1f6feb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 380) scale(560 340)">
+      <stop offset="0" stop-color="#8957e5" stop-opacity=".5"/><stop offset="1" stop-color="#8957e5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="name" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#a5d6ff"/><stop offset="1" stop-color="#d2a8ff"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity=".07"/></pattern>
+    <clipPath id="card"><rect width="1200" height="400" rx="24"/></clipPath>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 26px; fill: #e6edf3; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif; }
+      .rise { animation: rise .9s cubic-bezier(.2,.8,.2,1) both; }
+      .d1 { animation-delay: .15s; } .d2 { animation-delay: .35s; }
+      @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="400" fill="#0b0f17"/>
+    <rect width="1200" height="400" fill="url(#g1)"/>
+    <rect width="1200" height="400" fill="url(#g2)"/>
+    <rect width="1200" height="400" fill="url(#dots)"/>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="399" rx="24" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+
+  <!-- barra de janela -->
+  <circle cx="44" cy="42" r="7" fill="#ff5f57"/><circle cx="68" cy="42" r="7" fill="#febc2e"/><circle cx="92" cy="42" r="7" fill="#28c840"/>
+  <text x="120" y="48" class="mono" style="font-size:16px;fill:#7d8590">~/lucas-mikolaiewski</text>
+
+  <!-- status -->
+  <g class="rise">
+    <rect x="896" y="22" width="272" height="40" rx="20" fill="#d29922" fill-opacity=".12" stroke="#d29922" stroke-opacity=".45"/>
+    <circle cx="922" cy="42" r="6" fill="#d29922"/>
+    <circle cx="922" cy="42" r="6" fill="none" stroke="#d29922" stroke-width="2">
+      <animate attributeName="r" values="6;14" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".8;0" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="940" y="48" class="sans" style="font-size:16px;font-weight:600;fill:#d29922">provavelmente debugando</text>
+  </g>
+
+  <!-- nome -->
+  <text x="60" y="146" class="mono rise" style="font-size:17px;letter-spacing:5px;fill:#58a6ff">DEV FULL-STACK · MOVIDO A CAFÉ</text>
+  <text x="56" y="228" class="sans rise d1" style="font-size:78px;font-weight:800;letter-spacing:-2px" fill="url(#name)">Lucas Mikolaiewski</text>
+
+  <!-- linha de comando -->
+  <g class="rise d2">
+    <rect x="60" y="270" width="1080" height="72" rx="16" fill="#0d1117" fill-opacity=".85" stroke="#ffffff" stroke-opacity=".1"/>
+    <text x="88" y="318" class="mono" style="fill:#3fb950;font-weight:700">$</text>
+    
+  <clipPath id="c0"><rect x="120" y="288" height="42" width="0">
+    <animate attributeName="width" values="0;222;222;0;0" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="0.0s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <text x="120" y="318" class="mono" clip-path="url(#c0)">dev full-stack</text>
+  <rect y="296" width="12" height="28" rx="2" fill="#58a6ff" x="120" opacity="0">
+    <animate attributeName="x" values="120;342;342;120;120" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="0.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1548;0.1567;1" dur="25.200000000000003s" begin="0.0s" repeatCount="indefinite"/>
+  </rect>
+  <clipPath id="c1"><rect x="120" y="288" height="42" width="0">
+    <animate attributeName="width" values="0;394;394;0;0" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="4.2s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <text x="120" y="318" class="mono" clip-path="url(#c1)">funciona na minha máquina</text>
+  <rect y="296" width="12" height="28" rx="2" fill="#58a6ff" x="120" opacity="0">
+    <animate attributeName="x" values="120;514;514;120;120" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="4.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1548;0.1567;1" dur="25.200000000000003s" begin="4.2s" repeatCount="indefinite"/>
+  </rect>
+  <clipPath id="c2"><rect x="120" y="288" height="42" width="0">
+    <animate attributeName="width" values="0;410;410;0;0" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="8.4s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <text x="120" y="318" class="mono" clip-path="url(#c2)">console.log(&#x27;chegou aqui&#x27;)</text>
+  <rect y="296" width="12" height="28" rx="2" fill="#58a6ff" x="120" opacity="0">
+    <animate attributeName="x" values="120;530;530;120;120" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="8.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1548;0.1567;1" dur="25.200000000000003s" begin="8.4s" repeatCount="indefinite"/>
+  </rect>
+  <clipPath id="c3"><rect x="120" y="288" height="42" width="0">
+    <animate attributeName="width" values="0;488;488;0;0" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="12.6s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <text x="120" y="318" class="mono" clip-path="url(#c3)">renomeando variável pela 4ª vez</text>
+  <rect y="296" width="12" height="28" rx="2" fill="#58a6ff" x="120" opacity="0">
+    <animate attributeName="x" values="120;608;608;120;120" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="12.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1548;0.1567;1" dur="25.200000000000003s" begin="12.6s" repeatCount="indefinite"/>
+  </rect>
+  <clipPath id="c4"><rect x="120" y="288" height="42" width="0">
+    <animate attributeName="width" values="0;363;363;0;0" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="16.8s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <text x="120" y="318" class="mono" clip-path="url(#c4)">é só um botãozinho, né?</text>
+  <rect y="296" width="12" height="28" rx="2" fill="#58a6ff" x="120" opacity="0">
+    <animate attributeName="x" values="120;483;483;120;120" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="16.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1548;0.1567;1" dur="25.200000000000003s" begin="16.8s" repeatCount="indefinite"/>
+  </rect>
+  <clipPath id="c5"><rect x="120" y="288" height="42" width="0">
+    <animate attributeName="width" values="0;394;394;0;0" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="21.0s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <text x="120" y="318" class="mono" clip-path="url(#c5)">git commit -m &quot;agora vai&quot;</text>
+  <rect y="296" width="12" height="28" rx="2" fill="#58a6ff" x="120" opacity="0">
+    <animate attributeName="x" values="120;514;514;120;120" keyTimes="0.0000;0.0595;0.1349;0.1548;1.0000" dur="25.200000000000003s" begin="21.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.1548;0.1567;1" dur="25.200000000000003s" begin="21.0s" repeatCount="indefinite"/>
+  </rect>
+  </g>
+</svg>
